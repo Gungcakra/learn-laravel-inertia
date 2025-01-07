@@ -1,8 +1,15 @@
-import { Link } from "@inertiajs/react";
+import { Head, Link } from "@inertiajs/react";
 
 export default function Layout({children}) {
     return(
         <>
+            {/* <Head>
+                <meta 
+                    head-key="description"
+                    name="description"
+                    content="content"
+                />
+            </Head> */}
             <header>
                 <nav>
                     <Link className="nav-link" href="/">Home</Link>
