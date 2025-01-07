@@ -1,7 +1,6 @@
 import { Link } from "@inertiajs/react";
 
 export default function Home({posts, name}) {
-    console.log(posts);
     return (
         <>
 
@@ -15,6 +14,7 @@ export default function Home({posts, name}) {
                             <span>{new Date(post.created_at).toLocaleTimeString()}</span>
                         </div>
                         <p className="font-medium">{post.body}</p>
+                        <Link href={`/posts/${post.id}`} className="text-link">Read More...</Link>
                     </div>
                     ))}
             </div>
